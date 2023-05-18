@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #444455;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 10px;
     width: 100%;
 }
@@ -64,6 +64,7 @@ header {
 h1 {
     display: flex;
     top: 0px;
+    font-family: monospace;
     font-size: 80px;
     font-weight: bold;
     color: #ffffff;
@@ -83,17 +84,27 @@ h1 {
     margin-top: 10px;
     align-items: center;
     margin-left: 1%;
+
 }
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
     margin-top: 5px;
+    
 
 }
 ul a {
     display: block;
     color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+.ul-a {
+    display: block;
+    color: azure;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
@@ -192,6 +203,7 @@ p {
     text-shadow: 1px 2px 1px #268bff;
     padding: 1%;
     margin: 0px 5px;
+    margin-bottom: 15px;
     box-shadow: 3px 3px 1px #ffffff99;
 }
 .parrafo1 {
@@ -201,7 +213,7 @@ p {
     border-radius: 10px;
     padding: 3%;
     box-shadow: 2px 2px 0px #ffffff99;
-    margin: 5px 5px;
+    margin: 10px 5px;
 }
 
 #seccion2 {
@@ -242,15 +254,18 @@ p {
 }
 .btn1 {
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
     padding: 10px;
     color: aliceblue;
     background-color: #000000;
     border-radius: 10px;
     box-shadow: 0px 0px 3px #ffffff99;
-    width: min-content;
-
+    width: 200px;
+    margin-top: 10px;
+}
+.btn1:hover {
+    opacity: 0.65;
 }
 
 .arti2_2 {
@@ -338,11 +353,24 @@ p {
 
 }
 .boton_Azul {
-    background-color: #111133;
-    border: #000000;
     cursor: pointer;
-    width: max-content;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    color: aliceblue;
+    background-color: #000000;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px #ffffff99;
+    width: 200px;
+    margin-top: 10px;
 }
+.boton_Azul:hover {
+    opacity: 0.65;
+    background-color: #000000;
+}
+
+
 .arti3_2 {
     display: flex;
     flex-direction: column;
@@ -357,7 +385,7 @@ p {
     color: aliceblue;
 }
 .accordion-button{
-    background: hsl(211, 97%, 15%);
+    background: hsl(211, 70%, 30%);
     color: aliceblue;
 }
 .card-header {
@@ -369,9 +397,10 @@ p {
 }
 
 .accordion-button:not(.collapsed) {
-    background: hsl(211, 97%, 15%);
+    background: hsl(215, 70%, 30%);
     color: #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
+    
 }
 
 
@@ -418,8 +447,6 @@ p {
 .imput-form-sorteo:focus{
     background-color: #333333;
     color: aliceblue;
-
-
 }
 
 .boton-sorteo{
@@ -434,7 +461,7 @@ p {
     border-radius: 10px;
     box-shadow: 0px 0px 3px #ffffff99;
     cursor: pointer;
-    width: max-content;
+    width: 200px;
 }
 .boton-sorteo:hover {
     opacity: 0.65;
@@ -543,10 +570,10 @@ textarea {
 }
 .boton {
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin: 0;
-    width: max-content;
+    width: 200px;
     padding: 1%;
     color: aliceblue;
     background-color: #000000;
