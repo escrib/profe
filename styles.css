@@ -17,7 +17,7 @@
   --card-txt: #f0fcff;
   /* Botones */
   --btn-txt: #fff3e6;
-  --btn-txt-dark: #2C3539;
+  --btn-txt-dark: #2c3539;
   --btn-bg: #ff8700;
 }
 .card {
@@ -34,7 +34,7 @@
 .card-text {
   color: var(--card-txt);
 }
-.card-inicio{
+.card-inicio {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -70,7 +70,8 @@ footer {
 .headd {
   position: fixed;
   background-color: var(--header-bg);
-  /* background-image: url("/img/banner.jpg"); */
+  background-image: url("/img/banner-min.svg");
+  background-size: cover;
   width: 100%;
   height: auto;
   z-index: 10;
@@ -199,8 +200,6 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-
 .texSec1 {
   color: aliceblue;
   text-align: center;
@@ -227,7 +226,7 @@ p {
   margin: 10px 5px;
   color: antiquewhite;
 }
-.imgInicio{
+.imgInicio {
   width: 80%;
 }
 
