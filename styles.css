@@ -4,33 +4,43 @@
   padding: 0;
 }
 :root {
+  /* Head y Background */
   --bg: #1f2628;
   --accent: #0bb5ff;
-  --hd-bg: #0d1121;
+  --header-bg: #0d1121;
   --logo-txt: #e2f9ff;
   --logo-shdw: #5e6272;
+  /* Cards */
+  --card-bg: #2c3539;
+  --card-header: #1f2128;
+  --card-tit: #e2f9ff;
+  --card-txt: #f0fcff;
+  /* Botones */
   --btn-txt: #fff3e6;
+  --btn-txt-dark: #2C3539;
   --btn-bg: #ff8700;
-  --crd-bg: #2c3539;
-  --crd-hd: #1f2128;
-  --crd-txt: #f0fcff;
 }
 .card {
-  background-color: var(--crd-bg);
+  background-color: var(--card-bg);
   border-radius: 20px;
-  color: hsl(210, 90%, 90%);
   font-weight: 500;
   height: 100%;
   border: 0;
+  color: var(--card-tit);
 }
 .card-header {
-  background-color: var(--crd-hd);
+  background-color: var(--card-header);
 }
 .card-text {
-  color: var(--crd-txt);
+  color: var(--card-txt);
 }
-html {
-  scroll-behavior: smooth;
+.card-inicio{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.card3 {
+  margin: 0 10px;
 }
 .ancla::before {
   display: block;
@@ -59,8 +69,8 @@ footer {
 }
 .headd {
   position: fixed;
-  /* background-color: var(--hd-bg); */
-  background-image: url("/img/banner.jpg");
+  background-color: var(--header-bg);
+  /* background-image: url("/img/banner.jpg"); */
   width: 100%;
   height: auto;
   z-index: 10;
@@ -74,7 +84,6 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0.5%;
-  /* border: 10px solid #111133; */
   border-radius: 20px;
 }
 #logo {
@@ -133,18 +142,17 @@ ul li {
   display: flex;
   position: relative;
   float: left;
-  margin: 2px;
+  margin: 5px;
   margin-bottom: 5px;
   padding: 0;
   background-color: #1f2128;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 2px 2px 0px #ffffff99;
   justify-content: center;
 }
 ul li:hover {
   opacity: 0.7;
 }
-
 #btn_redes {
   display: flex;
   position: absolute;
@@ -159,14 +167,14 @@ ul li:hover {
 a .redFace {
   width: 50px;
   height: 50px;
-  background-color: #ffffff99;
+  background-color: var(--logo-shdw);
   border-radius: 10px;
   margin-right: 10px;
 }
 a .redInst {
   width: 50px;
   height: 50px;
-  background-color: #ffffff99;
+  background-color: var(--logo-shdw);
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -191,20 +199,11 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.divImgSec1 {
-  width: 50%;
-  height: 100%;
-  margin-right: 1%;
-}
-.imgSec1 {
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px #ffffff99;
-  width: 100%;
-}
+
+
 .texSec1 {
   color: aliceblue;
   text-align: center;
-  width: 50%;
   height: 100%;
   margin: auto;
 }
@@ -217,7 +216,6 @@ p {
   margin: 0px 5px;
   margin-bottom: 15px;
   color: antiquewhite;
-
   box-shadow: 3px 3px 1px #ffffff99;
 }
 .parrafo1 {
@@ -228,6 +226,9 @@ p {
   box-shadow: 2px 2px 0px #ffffff99;
   margin: 10px 5px;
   color: antiquewhite;
+}
+.imgInicio{
+  width: 80%;
 }
 
 #seccion2 {
@@ -267,10 +268,11 @@ p {
 }
 .btn1 {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 10px;
   color: var(--btn-txt);
+  color: #e2f9ff;
   border-radius: 10px;
   box-shadow: 0px 0px 3px #ffffff99;
   width: 200px;
@@ -407,9 +409,6 @@ p {
   border-radius: 20px;
   padding: 0;
 }
-.card3 {
-  margin: 0 10px;
-}
 
 #seccion4 {
   display: flex;
@@ -449,13 +448,13 @@ p {
 
 .boton-sorteo {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin: 0;
   margin-top: 10px;
   padding: 2%;
   color: var(--btn-txt);
-  background-color: #ff8163;
+  background-color: var(--btn-bg);
   border-radius: 10px;
   box-shadow: 0px 0px 3px #ffffff99;
   cursor: pointer;
@@ -575,7 +574,7 @@ textarea {
   width: 200px;
   padding: 1%;
   color: var(--btn-txt);
-  background-color: #ff8163;
+  background-color: var(--btn-bg);
   border-radius: 10px;
   box-shadow: 0px 0px 3px #ffffff99;
 }
